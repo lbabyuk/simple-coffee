@@ -1,0 +1,99 @@
+
+img {
+    width: 400px;
+}
+.icon img {
+    width: 30px; 
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url("background.jpg");
+    background-size: contain;
+    /*background-image: radial-gradient*/
+    color:white;
+}
+.logo {
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-family: cursive;
+    font-weight: bold;
+}
+.contacts {
+    font-size: 20px;
+    font-family: cursive;
+    font-weight: bold;
+   }  
+a:link {
+    text-decoration: none ;
+    color:white;
+}
+#medium-text {
+    font-size: 21px;
+    font-weight: normal; 
+    text-align: center;
+}
+#large-text {
+    font-size: 36px;
+    font-weight: bold; 
+    text-align: center;
+}
+#small-text {
+    font-size: 17px;
+    font-weight: normal; 
+    text-align: center;
+}
+#buttons {
+    font-size: 14px;
+    font-weight: normal; 
+    text-align: center;
+}
+#button-left {
+    border: white 1px solid;
+    padding: 7px;
+    color: white;
+}
+#button-left:hover{
+    color: black;
+    background-color: white;
+}
+#button-right {
+    padding: 7px;
+    background-color: rgba(0, 110, 255, 0.884);
+    color: white;
+}
+#button-right:hover{
+    color: white;
+    background-color: black;
+}
+#bottom {
+    text-align: center;
+}
+.service {
+    background-color: rgb(46, 42, 42);
+    color:white;
+    width: 500px;
+    text-align: center;
+}
+#contacts {
+    font-size: 14px;
+    font-weight: normal; 
+    }
+#contacts-text {
+    font-size: 22px;
+    font-weight: bold;
+}
+#p-text {
+    font-size: 15px;  
+} 
+#address-text {
+    font-size: 19px;
+    font-weight: bold;  
+}
+#hours-text {
+    font-size: 19px;
+    font-weight: bold;  
+}
+#p-contacts {
+    font-size: 19px;
+    font-weight: bold; 
+}
