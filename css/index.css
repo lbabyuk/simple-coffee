@@ -23,12 +23,9 @@ body {
     font-family: cursive;
     font-weight: bold;
    } 
-a {
-    color: white;
-}
 a:link {
     text-decoration: none ;
-    color:white;
+    color: white;
 }
 #medium-text {
     font-size: 21px;
