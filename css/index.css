@@ -22,7 +22,10 @@ body {
     font-size: 20px;
     font-family: cursive;
     font-weight: bold;
-   }  
+   } 
+a:visited {
+    color: white;
+}
 a:link {
     text-decoration: none ;
     color:white;
