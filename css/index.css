@@ -1,31 +1,72 @@
 
-img {
-    width: 400px;
-}
-.icon img {
-    width: 30px; 
-}
 body {
+    max-width: 980px;
+    margin: auto;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("background.jpg");
+    background-image: url("background.png");
     background-size: contain;
     color:white;
 }
-.logo {
-    text-transform: uppercase;
-    font-size: 2rem;
-    font-family: cursive;
-    font-weight: bold;
+
+.icon img {
+    width: 30px;
 }
 .contacts {
-    font-size: 20px;
-    font-family: cursive;
-    font-weight: bold;
-} 
+text-decoration: none;
+font-family: cursive;
+color: white;
+}
+
 a:link {
     text-decoration: none ;
     color: white;
 }
+
+.heading .logo {
+    font-size: 35px;
+    font-family: cursive;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+header lable {
+    font-size: 35px 
+}
+
+#burger-checkbox {
+    display: none;
+}
+
+header nav {
+    display: none; 
+}
+
+header input:checked ~ nav {
+    display: block;
+}
+
+.heading nav a {
+    display: block;
+    color:white;
+}
+
+@media (min-width: 500px) {
+    header label {
+        display: none;
+    }
+
+    .heading {
+        display: flex;
+    }
+
+    .heading .menu {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
+    
 #medium-text {
     font-size: 21px;
     font-weight: normal; 
@@ -72,6 +113,9 @@ a:link {
     color:white;
     width: 500px;
     text-align: center;
+}
+img {
+    width: 400px;
 }
 #connect-with-us {
     font-size: 14px;
