@@ -9,27 +9,34 @@
     padding: 0;
     margin: 0;
 }
-.parallax {
+/*.parallax {
     min-height: 200px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    z-index: -10;
 }
+@media only screen and (max-device-width: 1366px) {
+    .parallax {
+      background-attachment: scroll;
+    }
+  }*/
     body {
     background-image: url("coffee.png");
     max-width: 980px;
     margin: auto;
     height: 100%;
     font-family: Arial, sans-serif;
-    color: whitesmoke;
+    color: white;
 }
 
 #top {
     margin-bottom: 200px;
-}
+    margin-top: 400px;
+    }
 #top * {
-    margin: 25px;
+     margin: 25px;
 }
 .icon img {
     width: 30px;
@@ -77,7 +84,6 @@ header input:checked ~ nav {
     display: block;
     color:white;
 }
-
 
 @media (min-width: 500px) {
     header label {
@@ -143,13 +149,19 @@ header input:checked ~ nav {
     background-color: black;
 }
 #bottom {
-margin-bottom: 75px;
-}
- #bottom p {
-    display: flex;
-    flex-direction: center;
-    justify-content: space-around;
-    text-align: center;
+    margin-bottom: 75px;
+    }
+     #bottom p {
+        display: flex;
+        flex-direction: center;
+        justify-content: space-around;
+        text-align: center;
+        }
+
+    #our servisces {
+        font-size: 14px;
+        font-weight:lighter;
+        text-align: center; 
     }
 .mycard {
     font-size: 14px;
@@ -159,23 +171,11 @@ margin-bottom: 75px;
     color: black;
 }
 
-/*#servise-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-           
-}
-
- img {
-     width: 200px;
-}*/
-
-
 #footer {
     display: flex;
     justify-content: space-between;
     margin-top: 75px; 
+    margin-bottom: 75px;
 
 }
 #connect-with-us {
