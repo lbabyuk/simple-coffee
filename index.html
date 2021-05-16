@@ -9,35 +9,26 @@
 </head>
 <body>
     <header id="home">
-            <div class="heading">
+         <div class="heading">
             <div class="logo">Simple Coffee</div>
             <label class="burger-icon" for="burger-checkbox">&#9776;</label>
             <input type="checkbox" id="burger-checkbox">
             <nav class="menu">
                 <a class="contacts" href="#footer">Contacts</a>
-                <div class="icons">
                 <a class="icon" href="https://uk-ua.facebook.com/" target="_blank"><img src="img/icon-facebook.png"
                             alt="facebook"></a>
                 <a class="icon" href="https://www.instagram.com/" target="_blank"><img src="img/icon-instagram.png"
                             alt="instagram"></a>            
                 <a class="icon" href="https://www.youtube.com/" target="_blank"><img src="img/icon-youtube.png"
                             alt="youtube"></a>
-                </div>            
-            </nav>
-        </div> 
-        <!--<div class="banner">
-            <h1>This website is under construction until May'31 but...<br></h1>
-            <h3>We'll be back very soon<br></h3>
-            <h2>and you still can order our services or subscribe for the best offers!</h2>
-            <div id="buttons">
-                <a id="button-left" href="#bottom">Our Services</a>
-                <a id="button-right" href="#footer">Receive Offers</a>
-            </div>
-        </div>-->        
+                </nav>            
+             </div>            
+             
+            
     </header>
         <main>
        <div class="parallax">
-                  </div>   
+                  </div>
        <div id="top">
             <div class="text">
                 <p id="medium-text">This website is under construction until May'31 but...</p>
@@ -49,34 +40,60 @@
                 <a id="button-right" href="#footer">Receive Offers</a>
             </div>
         </div>
-        <div id="bottom">
-            <h1>Our Services</h1>
-            <p>We provide all kind of services thanks to which you can enjoy coffee:</p>
+
+            <div id="bottom">
+            <p id="medium-text">Our Services</p>
+            <p id="small-text">We provide all kind of services thanks to which you can enjoy coffee:</p>
         </div>
-        <div class="ourservices-lists">
-            <div class="service">
-                <article>
-                    <img src="img/coffee-grains-tree.png" alt="coffee-grains-tree">
-                    <h2>Understanding Coffee</h2>
-                    <p>Better beans. Better coffee. Better planet.</p>
-                </article>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+              <div class="card h-100" style="width: 20rem;">
+                <img src="/img/coffee-grains-tree.png" class="card-img-top" alt="coffee-grains-tree">
+                <div class="card-body">
+                  <h5 class="card-title">Understanding Coffee</h5>
+                  <p class="card-text">Better beans. Better coffee. Better planet.</p>
+                </div>
+               </div>
             </div>
-            <div class="service">
-                <article>
+            <div class="col">
+              <div class="card h-100" style="width: 20rem;">
+                <img src="img/coffee-splash-cookies.png" class="card-img-top" alt="coffee-splash-cookies">
+                <div class="card-body">
+                  <h5 class="card-title">Brewin</h5>
+                  <p class="card-text">Experience love at first sip</p>
+                </div>
+                </div>
+            </div>
+            <div class="col">
+              <div class="card h-100" style="width: 20rem;" >
+                <img src="img/coffee-cup.png" class="card-img-top" alt="coffee-cup">
+                <div class="card-body">
+                  <h5 class="card-title">Tasting Coffee</h5>
+                  <p class="card-text">Good coffee is like friendship: rich, and warm and strong</p>
+                </div>
+                </div>
+             </div>
+          </div>
+
+         <!-- <div id="service-list">
+            <article>
+                <img src="img/coffee-grains-tree.png" alt="coffee-grains-tree">
+                 <h3>Understanding Coffee</h3>
+                 <p>Better beans. Better coffee. Better planet.</p>
+                </article>
+               <article>
                     <img src="img/coffee-splash-cookies.png" alt="coffee-splash-cookies">
-                    <h2>Brewing</h2>
+                    <h3>Brewing</h3>
                     <p>Experience love at first sip</p>
                 </article>
-            </div>
-            <div class="service">
-                <article>
+               <article>
                     <img src="img/coffee-cup.png" alt="coffee-cup">
-                    <h2>Tasting Coffee</h2>
+                    <h3>Tasting Coffee</h3>
                     <p>Good coffee is like friendship: rich, and warm and strong</p>
                 </article>
-            </div>
-        </div>
-    </main>
+            </div>-->
+        </main>
     <footer id="footer">
         <div id="connect-with-us">
             <p id="contacts-text">Contacts</p><br>
@@ -97,7 +114,19 @@
                 <a href="#mailto:leafcompany@email.com">leafcompany@email.com</a><br>
             </div>
         </div>
-        <div>
+        <form>
+            <div class="mb-3" style="width: 20rem;">
+              <label for="InputAddress" class="form-label">User name</label>
+              <input type="text" class="form-control" id="InputName" aria-describedby="emailHelp">
+              </div>
+            <div class="mb-3" style="width: 20rem;">
+              <label for="InputEmail" class="form-label">User e-mail</label>
+              <input type="text" class="form-control" id="InputEmail">
+              <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+            </div>
+            <button type="submit" class="btn btn-primary">Receive Offers</button>
+          </form>
+       <!-- <div>
             <form method="Post" action="">
                 <label>
                     <input type="text" placeholder="Name*" name="User name">
@@ -107,7 +136,7 @@
                 </label>
                 <input type="submit" value="Receive Offers">
             </form>
-        </div>
+        </div>-->
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
