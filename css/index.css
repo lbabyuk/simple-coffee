@@ -9,7 +9,7 @@
 }
 .parallax {
     
-    min-height: 600px;
+    min-height: 200px;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,6 +24,12 @@ body {
     color: white;
 }
 
+#top {
+    margin-bottom: 200px ;
+}
+#top * {
+    margin: 25px;
+}
 .icon img {
     width: 30px;
 }
@@ -98,17 +104,17 @@ header input:checked ~ nav {
     min-width: auto;
 }  
 #medium-text {
-    font-size: 21px;
+    font-size: 30px;
     font-weight: normal; 
     }
 
 #large-text {
-    font-size: 36px;
+    font-size: 45px;
     font-weight: bold; 
     }
 
 #small-text {
-    font-size: 17px;
+    font-size: 24px;
     font-weight: normal; 
     
 }
@@ -135,13 +141,16 @@ header input:checked ~ nav {
     color: white;
     background-color: black;
 }
+#bottom {
+margin-bottom: 75px;
+}
  #bottom p {
     display: flex;
     flex-direction: center;
     justify-content: space-around;
     text-align: center;
-}
-.card {
+    }
+.mycard {
     font-size: 14px;
     font-weight:lighter;
     text-align: center;
@@ -162,7 +171,12 @@ header input:checked ~ nav {
 }*/
 
 
+#footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 75px; 
 
+}
 #connect-with-us {
     font-size: 14px;
     font-weight: normal; 
@@ -186,3 +200,4 @@ header input:checked ~ nav {
     font-size: 19px;
     font-weight: bold; 
 }
+ 
