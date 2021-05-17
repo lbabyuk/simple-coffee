@@ -1,54 +1,46 @@
 
 
 :root {
-    font-family: Arial, sans-serif;
-    color: white;
-    }
+    --font-family: Arial, sans-serif;
+    --color: white;
+    --font-weight: bold;
+}
     
-    * {
+* {
     padding: 0;
     margin: 0;
 }
-/*.parallax {
-    min-height: 200px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -10;
-}
-@media only screen and (max-device-width: 1366px) {
-    .parallax {
-      background-attachment: scroll;
-    }
-  }*/
-    body {
+
+body {
     background-image: url("coffee.png");
     max-width: 980px;
     margin: auto;
     height: 100%;
-    font-family: Arial, sans-serif;
-    color: white;
+    font-family: var(--font-family);
+    color: var(--color);
 }
 
 #top {
-    margin-bottom: 200px;
-    margin-top: 400px;
+    margin-top: 200px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
     }
 #top * {
-     margin: 25px;
+    margin: 25px;
 }
 .icon img {
     width: 30px;
 }
 .icon {
     display: flex;
- }
+}
+
 .contacts {
     text-decoration: none;
-    font-size: 22px;
+    font-size: 18px;
     font-family: cursive;
-    color:white;
+    color: var(--color);
 }
 
 a:link {
@@ -62,10 +54,11 @@ a:link {
     font-family: cursive;
     text-transform: uppercase;
     text-align: left;
+    padding: 20px 20px 20px;
 }
 
 header lable {
-    font-size: 35px; 
+    font-size: 35px;
 }
 
 #burger-checkbox {
@@ -82,7 +75,7 @@ header input:checked ~ nav {
 
 .heading nav a {
     display: block;
-    color:white;
+    color: var(--color);
 }
 
 @media (min-width: 500px) {
@@ -92,6 +85,8 @@ header input:checked ~ nav {
 
     .heading {
         display: flex;
+        flex: 1;
+        justify-content: space-around;
     }
 
     .heading .menu {
@@ -99,6 +94,15 @@ header input:checked ~ nav {
         flex: 1;
         justify-content: space-around;
         align-items: center;
+    }
+    .heading .logo {
+        display: flex;
+        font-weight: bold;
+        font-size: 20px;
+        font-family: cursive;
+        text-transform: uppercase;
+        text-align: left;
+        padding: 20px 20px 20px;
     }
 }
 
@@ -116,8 +120,8 @@ header input:checked ~ nav {
     }
 
 #large-text {
-    font-size: 45px;
-    font-weight: bold; 
+    font-size: 35px;
+    font-weight: var(--font-weight);  
     }
 
 #small-text {
@@ -126,6 +130,9 @@ header input:checked ~ nav {
     
 }
 #buttons {
+    display: flex;
+    flex-direction: center;
+    justify-content: center;
     font-size: 14px;
     font-weight: normal; 
     text-align: center;
@@ -133,7 +140,7 @@ header input:checked ~ nav {
 #button-left {
     border: white 1px solid;
     padding: 15px;
-    color: white;
+    color: var(--color);
 }
 #button-left:hover{
     color: black;
@@ -142,27 +149,29 @@ header input:checked ~ nav {
 #button-right {
     padding: 15px;
     background-color: blue;
-    color: white;
+    color: var(--color);
 }
 #button-right:hover{
-    color: white;
+    color: var(--color);
     background-color: black;
 }
 #bottom {
     margin-bottom: 75px;
     }
-     #bottom p {
-        display: flex;
-        flex-direction: center;
-        justify-content: space-around;
-        text-align: center;
-        }
+#bottom p {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    text-align: center;
+    margin: 20px 20px 20px;
+ }
 
-    #our servisces {
-        font-size: 14px;
-        font-weight:lighter;
-        text-align: center; 
-    }
+#our servisces {
+ font-size: 14px;
+ font-weight:lighter;
+ text-align: center; 
+}
+
 .mycard {
     font-size: 14px;
     font-weight:lighter;
@@ -176,7 +185,7 @@ header input:checked ~ nav {
     justify-content: space-between;
     margin-top: 75px; 
     margin-bottom: 75px;
-
+    padding: 20px 20px 20px;
 }
 #connect-with-us {
     font-size: 14px;
@@ -188,18 +197,11 @@ header input:checked ~ nav {
     font-weight: bold;
 }
 #p-text {
-    font-size: 20px;  
+    font-size: 20px; 
+    color: var(--font-family);
 } 
-#address-text {
+#address-text,  #hours-text, #p-contacts {
     font-size: 19px;
-    font-weight: bold;  
-}
-#hours-text {
-    font-size: 19px;
-    font-weight: bold;  
-}
-#p-contacts {
-    font-size: 19px;
-    font-weight: bold; 
+    font-weight: var(--font-weight);
 }
  
