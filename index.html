@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-    <div class="parallax">
+   <!-- <div class="parallax">-->   
     </div>
     <header id="home">
         <div class="heading">
@@ -27,7 +27,25 @@
         </div>            
     </header>
          <main>
-            
+            <div class="clock-container">
+                <div class="hours">
+                    <span>Hours</span>
+                    <p id="hour">00</p>
+                </div>
+            <div class="colon"></div>
+            <div class="minutes">
+                <span>Minutes</span>
+                <p id="minute">00</p>
+             </div>
+             <div class="colon"></div>
+             <div class="seconds">
+                 <span>Seconds</span>
+                 <p id="second">00</p>
+             </div>
+         </div>
+         <div class="bottom-clock">
+             <div class="progress-bur" id="progress"></div>
+         </div> 
         <div id="top">
             <div class="text">
                 <p id="medium-text">This website is under construction until May'31 but...</p>
@@ -119,6 +137,7 @@
             </form>
         </div>-->
     </footer>
+    <script src="js/clock.js"></script>
     <script src="js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
