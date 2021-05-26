@@ -6,9 +6,6 @@
     --font-weight: bold;
   }
 
-  
- 
-   
 * {
     padding: 0;
     margin: 0;
@@ -23,6 +20,24 @@ body {
     color: var(--color);
 }
 
+.clock-container {
+    display: flex;
+    flex-direction: center;
+    justify-content: space-around;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0;
+}
+
+.time {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    color:white;
+        }
 
   
 #top {
@@ -109,7 +124,7 @@ header input:checked ~ nav {
         text-align: left;
         padding: 20px 20px 20px;
     }
-}
+    }
 
 .text p {
     display: flex;
