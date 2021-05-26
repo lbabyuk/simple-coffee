@@ -13,6 +13,9 @@
 
 body {
     background-image: url("coffee.png");
+    background-repeat: no-repeat;
+    background-position: center-center;
+    background-size: cover;
     max-width: 980px;
     margin: auto;
     height: 100%;
