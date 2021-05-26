@@ -18,4 +18,3 @@ function updateClockContainerTime() {
  }
 
 setInterval(updateClockContainerTime, 1000);
-
