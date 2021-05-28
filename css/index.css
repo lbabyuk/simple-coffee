@@ -16,7 +16,7 @@ a:link {
     }
 
 body {
-    max-width: 980px; 
+    max-width: 1025px; 
     background-image: url("../img/luna.png");
     background-repeat: no-repeat;
     background-position: center-center;
@@ -41,8 +41,8 @@ body {
     .navbar {
         max-width: 100%;
         display: flex;
-        
     }
+
     .heading .navbar-nav {
         display: flex;
         flex: 1;
@@ -73,14 +73,22 @@ main {
     margin: auto;
 }
 
+.icon img {
+    width: 30px;
+}
+
 #brand {
     padding-left: 1%;
     font-weight: var(--font-weight);
-    font-size: 20px;
+    font-size: 25px;
     font-family: cursive;
     text-transform: uppercase;
     text-align: left;
-    color: brown;
+    color: white;
+}
+
+.nav-link {
+    font-weight: bold;
 }
 
 .navbar-toggler {
@@ -221,6 +229,10 @@ main {
 }
 
 #footer {
+    background-color: lightgrey;
+    background-repeat: no-repeat;
+    background-position: center-center;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
