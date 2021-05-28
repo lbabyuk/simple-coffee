@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
 
 :root {
     --font-family: Arial, sans-serif;
@@ -8,8 +9,11 @@
 * {
     padding: 0;
     margin: 0;
-    text-decoration: none;
 }
+
+a:link {
+    text-decoration: none;
+    }
 
 body {
     max-width: 980px; 
@@ -19,6 +23,47 @@ body {
     background-size: cover;
 }
 
+@media (min-width: 980px) {
+    header nav {
+        display: block; 
+    }
+   
+    .heading nav a {
+        display: block;
+    }
+
+    .icon img {
+        width: 30px;
+    }
+    .icon {
+        display: flex;
+    }
+    .navbar {
+        max-width: 100%;
+        display: flex;
+        
+    }
+    .heading .navbar-nav {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        align-items: center;
+    }
+     .heading .navbar-brand {
+        display: flex;
+        text-align: left;
+        padding: 20px 20px 20px;
+     }
+     
+     #footer {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 75px; 
+        margin-bottom: 75px;
+        padding: 20px 20px 20px;
+    }
+ }
+    
 main {
     margin-top: 15%;
 }
@@ -30,7 +75,7 @@ main {
 
 #brand {
     padding-left: 1%;
-    font-weight: bold;
+    font-weight: var(--font-weight);
     font-size: 20px;
     font-family: cursive;
     text-transform: uppercase;
@@ -48,7 +93,7 @@ main {
     text-align: center;
     text-transform: uppercase;
     font-size: 15px;
-    font-weight: bold;
+    font-weight: var(--font-weight);
     color:black;
     margin: 5%;
 }
@@ -98,7 +143,7 @@ main {
 
 #small-text {
     font-size: 14px;
-    font-weight: bold; 
+    font-weight: var(--font-weight); 
 }
 
 #buttons {
@@ -136,6 +181,7 @@ main {
     margin-top: 25%;
     margin-bottom: 25%;
     }
+
 #bottom p {
     display: flex;
     flex-direction: center;
@@ -143,15 +189,17 @@ main {
     text-align: center;
     margin: 20px 20px 20px;
  }
+
 #service-text {
     font-size: 30px;
-    font-weight: bold;
+    font-weight: var(--font-weight);
 }
 
 #provide-text {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: var(--font-weight);
 }
+
 .row {
     display: flex;
     flex-direction: column; 
@@ -173,10 +221,6 @@ main {
 }
 
 #footer {
-    background-color: darkgray;
-    background-repeat: no-repeat;
-    background-position: center-center;
-    background-size: cover;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -190,8 +234,9 @@ main {
 
 #contacts-text {
     font-size: 25px;
-    font-weight: bold;
+    font-weight: var(--font-weight);
     }
+
 #p-text {
     font-size: 15px; 
     color: var(--font-family);
@@ -205,453 +250,3 @@ form {
     margin-top: 15%;
 }
 
-@media (min-width: 992px) {
-   
-    #home {
-        width: 100%;
-    }
-
-    #brand {
-        padding-left: 1%;
-        font-weight: bold;
-        font-size: 20px;
-        font-family: cursive;
-        text-transform: uppercase;
-        text-align: left;
-        color: brown;
-    }
-
-    .heading .navbar-nav {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-        align-items: center;
-    }
-    
-    .icon img {
-        width: 30px;
-    }
-
-    .icon {
-        display: flex;
-    } 
-        
-    .clock-container {
-        /*display: flex;
-        flex-direction: center;
-        text-align: center;
-        text-transform: uppercase;*/
-        font-size: 25px;
-        /*font-weight: bold;
-        color:black;
-        margin: 5%;*/
-    }
-    
-    .time p{
-        padding-bottom: 0;
-        margin-bottom: 0;
-    }
-    
-    .time span {
-        padding-top: 0;
-        font-size: 12px; 
-        margin-top: 0;
-    }
-    .time {
-        /*background-color: rgba(248, 209, 150, 0.562);
-        border: 1px black solid;
-        width: 33%;
-        margin: 0;
-        padding: 0;*/
-    }
-    .text p {
-        display: flex;
-        flex-direction: center;
-        justify-content: space-around;
-        text-align: center;
-        min-height: 20px;
-        min-width: auto;
-    }
-    .text {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        min-height: 200px;
-        margin: 3% 1% 1% 1%;
-    }
-    
-    #medium-text {
-        font-size: 25px;
-        font-weight: bold; 
-        }
-    
-    #large-text {
-        font-size: 35px;
-        font-weight: bold;  
-        }
-    
-    #small-text {
-        font-size: 20px;
-        font-weight: bold; 
-    }
-    
-    #buttons {
-        display: flex;
-        flex-direction: center;
-        justify-content: center;
-        font-size: 14px;
-        font-weight: normal; 
-        text-align: center;
-    }
-    #button-left {
-        border: white 1px solid;
-        margin-right: 1%;
-        padding: 12px;
-        color: var(--color);
-    }
-    #button-left:hover{
-        color: black;
-        background-color: white;
-    }
-    #button-right {
-        padding: 12px;
-        margin-left: 1%;
-        background-color: burlywood;
-        color: var(--color);
-    }
-    #button-right:hover{
-        color: var(--color);
-        background-color: black;
-    }
-    
-   #bottom {
-        margin-top: 5%;
-        margin-bottom: 5%;
-        }
-    #bottom p {
-        display: flex;
-        flex-direction: center;
-        justify-content: space-around;
-        text-align: center;
-        margin: 20px 20px 20px;
-     }
-    #service-text {
-        font-size: 35px;
-        font-weight: bold;
-    }
-    
-    #provide-text {
-        font-size: 18px;
-        font-weight: bold;
-    }
-   .row {
-        display: flex;
-        flex-direction: row; 
-        justify-content: space-between;
-        align-items: center;
-     } 
-    
-     p.card-text {
-        font-size: 14px;
-        text-align: center;
-        color: black; 
-    }
-    .mycard {
-        font-size: 14px;
-        font-weight:lighter;
-        text-align: center;
-        background-color: rgba(248, 209, 150, 0.562);
-        color: black;
-    }
-    
-    #footer {
-        display: flex;
-        justify-content: space-between;
-    }
-
-    #connect-with-us {
-        font-size: 14px;
-        font-weight: normal; 
-        }
-    
-    #contacts-text {
-        font-size: 25px;
-        font-weight: bold;
-        }
-    #p-text {
-        font-size: 15px; 
-        color: var(--font-family);
-    } 
-    #address-text,  #hours-text, #p-contacts {
-        font-size: 15px;
-        font-weight: bolder;
-    }
-    
-    form {
-        margin-top: 15%;
-        margin-bottom: 10%;
-    }
-}
-
-/*
-:root {
-    --font-family: Arial, sans-serif;
-    --color: white;
-    --font-weight: bold;
-  }
-
-* {
-    padding: 0;
-    margin: 0;
-    text-decoration: none;
-}
-
-body {
-    background-image: url("../img/luna.png");
-    background-repeat: no-repeat;
-    background-position: center-center;
-    background-size: cover;
-    max-width: 980px;
-    margin: auto;
-    height: 100%;
-    font-family: var(--font-family);
-    color: var(--color);
-}
-
-.icon img {
-    width: 30px;
-}
-.icon {
-    display: flex;
-}
-.navbar {
-    max-width: 100%;
-    display: flex;
-    
-}
-.heading .navbar-nav {
-    display: flex;
-    flex: 1;
-    justify-content: space-around;
-    align-items: center;
-}
- .heading .navbar-brand {
-    display: flex;
-    font-weight: bold;
-    font-size: 20px;
-    font-family: cursive;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 20px 20px 20px;
-    color: brown;
-    }
-/*.contacts {
-    text-decoration: none;
-    font-size: 18px;
-    font-family: cursive;
-    color: var(--color);
-}
-
-a:link {
-    text-decoration: none;
-    }
-
-.heading .logo {
-    display: flex;
-    font-weight: bold;
-    font-size: 35px;
-    font-family: cursive;
-    text-transform: uppercase;
-    text-align: left;
-    padding: 20px 20px 20px;
-}
-
-header lable {
-    font-size: 35px;
-}
-
-/* #burger-checkbox {
-    display: none;
-}
-
-header nav {
-    display: block; 
-}
-
-/*header input:checked ~ nav {
-    display: block;
-}
-
-.heading nav a {
-    display: block;
-    color: var(--color);
-}
-
-#top {
-    margin-top: 200px;
-    margin-bottom: 100px;
-    margin-left: 50px;
-    margin-right: 50px;
-    }
-#top * {
-    margin: 25px;
-}
-
-.clock-container {
-    display: flex;
-    flex-direction: center;
-    justify-content: space-around;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 30px;
-    font-weight: bold;
-    color:black;
-    border: white 10px solid;
-    width: 80%;
-  }
-
-.time {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content:space-between;
-    border: white 5px solid;
-    width: 30%;
- }
-@media (max-width: 768px) {
-   .row {
-      display: flex;
-      flex-direction: column; 
-      justify-content: center;
-      align-items: center;
-   } 
-}
-
-@media (min-width: 980px) {
-    header label {
-        display: none;
-    }
-
-    .heading {
-        display: flex;
-        flex: 1;
-        justify-content: space-around;
-    }
-    .heading .navbar-nav {
-        display: flex;
-        flex: 1;
-        justify-content: flex-end;
-        align-items: center;
-    }
-     .heading .navbar-brand {
-        display: flex;
-        font-weight: bold;
-        font-size: 20px;
-        font-family: cursive;
-        text-transform: uppercase;
-        text-align: left;
-        padding: 20px 20px 20px;
-        }
-
-    /*.heading .menu {
-        display: flex;
-        flex: 1;
-        justify-content: space-around;
-        align-items: center;
-    }
-    .heading .logo {
-        display: flex;
-        font-weight: bold;
-        font-size: 20px;
-        font-family: cursive;
-        text-transform: uppercase;
-        text-align: left;
-        padding: 20px 20px 20px;
-    }
-    }
-
-.text p {
-    display: flex;
-    flex-direction: center;
-    justify-content: space-around;
-    text-align: center;
-    min-height: 20px;
-    min-width: auto;
-}  
-#medium-text {
-    font-size: 30px;
-    font-weight: normal; 
-    }
-
-#large-text {
-    font-size: 35px;
-    font-weight: var(--font-weight);  
-    }
-
-#small-text {
-    font-size: 24px;
-    font-weight: normal; 
-    
-}
-#buttons {
-    display: flex;
-    flex-direction: center;
-    justify-content: center;
-    font-size: 14px;
-    font-weight: normal; 
-    text-align: center;
-}
-#button-left {
-    border: white 1px solid;
-    padding: 15px;
-    color: var(--color);
-}
-#button-left:hover{
-    color: black;
-    background-color: white;
-}
-#button-right {
-    padding: 15px;
-    background-color: blue;
-    color: var(--color);
-}
-#button-right:hover{
-    color: var(--color);
-    background-color: black;
-}
-#bottom {
-    margin-bottom: 75px;
-    }
-#bottom p {
-    display: flex;
-    flex-direction: center;
-    justify-content: space-around;
-    text-align: center;
-    margin: 20px 20px 20px;
- }
-
-#footer {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 75px; 
-    margin-bottom: 75px;
-    padding: 20px 20px 20px;
-}
-#connect-with-us {
-    font-size: 14px;
-    font-weight: normal; 
-    }
-
-#contacts-text {
-    font-size: 30px;
-    font-weight: bold;
-    }
-#p-text {
-    font-size: 20px; 
-    color: var(--font-family);
-} 
-#address-text,  #hours-text, #p-contacts {
-    font-size: 19px;
-    font-weight: var(--font-weight);
-}
- 
