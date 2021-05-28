@@ -26,6 +26,8 @@
                         alt="instagram"></a>
                     <a class="nav-item nav-link disable icon" href="https://www.youtube.com/" target="_blank"><img src="img/icon-youtube.png"
                         alt="youtube"></a>
+                    <a class="nav-item nav-link disable icon" href="exchange.html" target="_blank"><img src="img/icon-dollar.png"
+                            alt="exchange"></a>   
                   </div>
                 </div>
             </nav>
@@ -44,132 +46,7 @@
             </nav> -->           
     </header>
          <main>
-            <h1>Exchange Rate Calculator</h1>
-            <p>Choose the currency and the amounts to get the exchange rate</p>
-            <div class="container">
-                <div class="currency">
-                  <select id="currency-one">
-                    <option value="AED">AED</option>
-                    <option value="ARS">ARS</option>
-                    <option value="AUD">AUD</option>
-                    <option value="BGN">BGN</option>
-                    <option value="BRL">BRL</option>
-                    <option value="BSD">BSD</option>
-                    <option value="CAD">CAD</option>
-                    <option value="CHF">CHF</option>
-                    <option value="CLP">CLP</option>
-                    <option value="CNY">CNY</option>
-                    <option value="COP">COP</option>
-                    <option value="CZK">CZK</option>
-                    <option value="DKK">DKK</option>
-                    <option value="DOP">DOP</option>
-                    <option value="EGP">EGP</option>
-                    <option value="EUR">EUR</option>
-                    <option value="FJD">FJD</option>
-                    <option value="GBP">GBP</option>
-                    <option value="GTQ">GTQ</option>
-                    <option value="HKD">HKD</option>
-                    <option value="HRK">HRK</option>
-                    <option value="HUF">HUF</option>
-                    <option value="IDR">IDR</option>
-                    <option value="ILS">ILS</option>
-                    <option value="INR">INR</option>
-                    <option value="ISK">ISK</option>
-                    <option value="JPY">JPY</option>
-                    <option value="KRW">KRW</option>
-                    <option value="KZT">KZT</option>
-                    <option value="MXN">MXN</option>
-                    <option value="MYR">MYR</option>
-                    <option value="NOK">NOK</option>
-                    <option value="NZD">NZD</option>
-                    <option value="PAB">PAB</option>
-                    <option value="PEN">PEN</option>
-                    <option value="PHP">PHP</option>
-                    <option value="PKR">PKR</option>
-                    <option value="PLN">PLN</option>
-                    <option value="PYG">PYG</option>
-                    <option value="RON">RON</option>
-                    <option value="RUB">RUB</option>
-                    <option value="SAR">SAR</option>
-                    <option value="SEK">SEK</option>
-                    <option value="SGD">SGD</option>
-                    <option value="THB">THB</option>
-                    <option value="TRY">TRY</option>
-                    <option value="TWD">TWD</option>
-                    <option value="UAH">UAH</option>
-                    <option value="USD" selected>USD</option>
-                    <option value="UYU">UYU</option>
-                    <option value="VND">VND</option>
-                    <option value="ZAR">ZAR</option>
-                  </select>
-                  <input type="number" id="amount-one" placeholder="0" value="1" />
-                </div>
-          
-                <div class="swap-rate-container">
-                  <button class="btn" id="swap">
-                    Swap
-                  </button>
-                  <div class="rate" id="rate"></div>
-                </div>
-          
-                <div class="currency">
-                  <select id="currency-two">
-                    <option value="AED">AED</option>
-                    <option value="ARS">ARS</option>
-                    <option value="AUD">AUD</option>
-                    <option value="BGN">BGN</option>
-                    <option value="BRL">BRL</option>
-                    <option value="BSD">BSD</option>
-                    <option value="CAD">CAD</option>
-                    <option value="CHF">CHF</option>
-                    <option value="CLP">CLP</option>
-                    <option value="CNY">CNY</option>
-                    <option value="COP">COP</option>
-                    <option value="CZK">CZK</option>
-                    <option value="DKK">DKK</option>
-                    <option value="DOP">DOP</option>
-                    <option value="EGP">EGP</option>
-                    <option value="EUR" selected>EUR</option>
-                    <option value="FJD">FJD</option>
-                    <option value="GBP">GBP</option>
-                    <option value="GTQ">GTQ</option>
-                    <option value="HKD">HKD</option>
-                    <option value="HRK">HRK</option>
-                    <option value="HUF">HUF</option>
-                    <option value="IDR">IDR</option>
-                    <option value="ILS">ILS</option>
-                    <option value="INR">INR</option>
-                    <option value="ISK">ISK</option>
-                    <option value="JPY">JPY</option>
-                    <option value="KRW">KRW</option>
-                    <option value="KZT">KZT</option>
-                    <option value="MXN">MXN</option>
-                    <option value="MYR">MYR</option>
-                    <option value="NOK">NOK</option>
-                    <option value="NZD">NZD</option>
-                    <option value="PAB">PAB</option>
-                    <option value="PEN">PEN</option>
-                    <option value="PHP">PHP</option>
-                    <option value="PKR">PKR</option>
-                    <option value="PLN">PLN</option>
-                    <option value="PYG">PYG</option>
-                    <option value="RON">RON</option>
-                    <option value="RUB">RUB</option>
-                    <option value="SAR">SAR</option>
-                    <option value="SEK">SEK</option>
-                    <option value="SGD">SGD</option>
-                    <option value="THB">THB</option>
-                    <option value="TRY">TRY</option>
-                    <option value="TWD">TWD</option>
-                    <option value="UAH">UAH</option>
-                    <option value="USD">USD</option>
-                    <option value="UYU">UYU</option>
-                    <option value="VND">VND</option>
-                    <option value="ZAR">ZAR</option>
-                  </select>
-                  <input type="number" id="amount-two" placeholder="0" />
-                </div>
-              </div>
+            
          <div id="top">
             <div class="clock-container">
                 <div class="time">
@@ -281,6 +158,7 @@
         </div>
         </div>
              <form>
+                <form method="Post" action="">
                 <div class="mb-3">
                   <label for="InputUserName" class="form-label">User Name</label>
                   <input type="name" class="form-control" id="InputName" aria-describedby="nameHelp">
@@ -293,22 +171,9 @@
                 </div>
                    <button type="submit" class="btn btn-primary">Receive Offers</button>
               </form>
-               
-       <!-- <div>
-            <form method="Post" action="">
-                <label>
-                    <input type="text" placeholder="Name*" name="User name">
-                </label>
-                <label>
-                    <input type="text" placeholder="E-mail*" name="User email">
-                </label>
-                <input type="submit" value="Receive Offers">
-            </form>
-        </div>-->
-    </footer>
-    <script src="js/exchange.js"></script>
-    <script src="js/clock.js"></script>
-    <script src="js/index.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+     </footer>
+        <script src="js/clock.js"></script>
+        <script src="js/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
 </body>
 </html>

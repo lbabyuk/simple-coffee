@@ -1,5 +1,5 @@
 const currencyEl_one = document.querySelector('#currency-one');
-const amountEl_one = document.querySelectord('#amount-one');
+const amountEl_one = document.querySelector('#amount-one');
 const currencyEl_two = document.querySelector('#currency-two');
 const amountEl_two = document.querySelector('#amount-two');
 
