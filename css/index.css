@@ -21,14 +21,14 @@ body{
     margin: 0;
 }
 
-body .parallax {
+/*body .parallax {
     background-attachment: scroll;
     background-color:red 
-}
+}*/
    
  header{
         padding: 20px;
-        background: lightgray;
+        background-color: lightgray;
     }
 
     header .heading {
@@ -36,7 +36,7 @@ body .parallax {
     }
 
     header nav a {
-        width: 100%;
+        width: 80%;
         display: flex;
         justify-content: space-between;
     }
@@ -268,11 +268,6 @@ form label {
 
   @media (max-width: 991px) {
     
-    header nav button{
-        display: flex;
-        justify-content: space-between;
-    }
-
     #brand {
         font-size:3.5vw;
         text-shadow: 3px 3px 1px gray;
@@ -467,6 +462,12 @@ form label {
 }
 
 @media (max-width: 500px) {
+
+    header nav a {
+        width: 40%;
+        display: flex;
+        justify-content: space-between;
+    }
     
     #brand {
         font-size:5vw;
