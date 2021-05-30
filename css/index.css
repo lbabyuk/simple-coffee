@@ -10,13 +10,20 @@
     box-sizing: border-box;
 } 
 
-body {
+
+body{
+    width: 100%;
     background-image: url("../img/luna.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     font-family: Arial, sans-serif; 
     margin: 0;
+}
+
+body .parallax {
+    background-attachment: scroll;
+    background-color:red 
 }
    
  header{
@@ -130,7 +137,7 @@ body {
 }
 #button-left {
     border: black 2px solid;
-    margin-right: 1%;
+    margin-right: 5%;
     padding: 14px 40px;
     color: black;
 }
@@ -140,7 +147,7 @@ body {
 }
 #button-right {
     padding: 14px 40px;
-    margin-left: 1%;
+    margin-left: 5%;
     background-color: blue;
     color: var(--color);
 }
@@ -191,13 +198,13 @@ body {
 }
 
 h5 {
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     text-align: center;
     font-weight: var(--font-weight) ;
 }
 
 .card-text {
-    font-size: 1vw;
+    font-size: 1.25vw;
     text-align: center; 
 }
 .mycard {
@@ -220,13 +227,14 @@ h5 {
     padding: 20px 20px 20px;
     width: 50% 50%;
 }
+
 #connect-with-us {
-    font-size: 1.5vw;
     margin-left: 5%;
 }
 
 #contacts-text {
     font-size: 2.5vw;
+    font-weight: bold;
  }
 
 #p-text {
@@ -257,3 +265,285 @@ form label {
     font-size: 1vw;
     padding: 10px 24px;
   }
+
+  @media (max-width: 991px) {
+    
+    header nav button{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #brand {
+        font-size:3.5vw;
+        text-shadow: 3px 3px 1px gray;
+    }
+
+    .clock-container {
+        font-size: 2vw;
+        font-weight: var(--font-weight);
+        color:black;
+        margin: 15%;
+    }
+
+    #medium-text {
+        font-size: 3vw;
+        text-shadow: 3px 3px 2px rgb(221, 203, 197);
+        }
+    
+    #large-text {
+        font-size: 4vw;
+        text-shadow: 3px 3px 2px rgb(221, 203, 197);
+        }
+
+    #small-text {
+        font-size: 2.75vw;
+        text-shadow: 2px 2px 1px rgb(221, 203, 197);
+    }
+
+    #button-left {
+        margin-right: 5%;
+        padding: 10px 30px;
+        background-color: white;
+    }
+    
+    #button-right {
+        padding: 10px 30px;
+        margin-left: 5%;
+    }
+
+    #service-text {
+        font-size: 6vw;
+        text-shadow: 3px 3px 2px rgb(221, 203, 197);
+    }
+    
+    #provide-text {
+        font-size: 3.5vw;
+         text-shadow: 3px 3px 2px rgb(221, 203, 197);
+    }
+    
+    h5 {
+        font-size: 2vw;
+    }
+    
+    .card-text {
+        font-size: 1.5vw;
+    }
+
+    #contacts-text {
+        font-size: 2.5vw;
+     }
+    
+    #p-text {
+        font-size: 1.85vw; 
+    } 
+    
+    #address-text,  #hours-text, #p-contacts {
+        font-size: 2vw;
+    }
+    
+    form label {
+        font-size: 2vw;
+       }
+
+    .form-text {
+        font-size: 2vw;
+        
+      }
+    
+    .btn-primary {
+        font-size: 1.75vw;
+    }
+}
+@media (min-width: 768px) {
+    
+    #brand {
+        font-size:3vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+
+    #medium-text {
+        font-size: 3vw;
+        text-shadow: 2px 2px 1px gray;
+
+    }
+    
+    #large-text {
+        font-size: 4vw;
+        text-shadow: 2px 2px 1px gray;
+
+    }
+    
+    #small-text {
+        font-size: 2vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+
+    #button-left {
+        font-size: 2vw;
+        border: black 1px solid;
+        margin-right: 3%;
+        padding: 5px 10px;
+    }
+    
+    #button-right {
+        font-size: 2vw;
+        border: black 1px solid;
+        padding: 5px 10px;
+        margin-left: 3%;
+    }
+
+   }
+@media (max-width: 768px) {
+    body{
+    width: 100%;
+    }
+
+    #brand {
+        font-size:4vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+
+    h5 {
+        font-size: 3vw;
+    }
+    
+    .card-text {
+        font-size: 2vw;
+    }
+
+    #medium-text {
+        font-size: 4vw;
+        text-shadow: 2px 2px 1px gray;
+
+    }
+    
+    #large-text {
+        font-size: 6vw;
+        text-shadow: 2px 2px 1px gray;
+
+    }
+    
+    #small-text {
+        font-size: 3vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+
+    #button-left {
+        font-size: 3vw;
+        border: black 1px solid;
+        margin-right: 3%;
+        padding: 5px 10px;
+    }
+    
+    #button-right {
+        font-size: 3vw;
+        border: black 1px solid;
+        padding: 5px 10px;
+        margin-left: 3%;
+    }
+    #service-text {
+        font-size: 7vw;
+        text-shadow: 4px 4px 0px gray;
+        
+    }
+
+    #provide-text {
+        font-size: 4.5vw;
+        text-shadow: 4px 4px 0px gray;
+        
+    }
+
+    #contacts-text {
+        font-size: 3.5vw;
+     }
+    
+    #p-text {
+        font-size:2vw; 
+    } 
+    
+    #address p, #hours p, #contacts p, #contacts a, form label, .form-text, .btn-primary {
+        font-size: 2vw;
+    }
+}
+
+@media (max-width: 500px) {
+    
+    #brand {
+        font-size:5vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+    .clock-container {
+        font-size: 4vw;
+    }
+
+    .time span {
+       font-size: 2.5vw; 
+    }
+
+  #medium-text {
+        font-size: 4vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+    
+    #large-text {
+        font-size: 6vw;
+        text-shadow: 2px 2px 1px gray;
+
+    }
+    
+    #small-text {
+        font-size: 3.5vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+
+    #button-left {
+        font-size: 3vw;
+        border: black 1px solid;
+        margin-right: 3%;
+        padding: 5px 10px;
+    }
+    
+    #button-right {
+        font-size: 3vw;
+        border: black 1px solid;
+        padding: 5px 10px;
+        margin-left: 3%;
+    }
+    #service-text {
+        font-size: 7vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+
+    #provide-text {
+        font-size: 4.5vw;
+        text-shadow: 2px 2px 1px gray;
+    }
+
+    h5 {
+        font-size: 4vw;
+    }
+    
+    .card-text {
+        font-size: 3vw;
+    }
+
+    #footer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    #contacts-text {
+        font-size: 3.5vw;
+     }
+    
+    #p-text {
+        font-size:3vw; 
+    } 
+    
+    #address p, #hours p, #contacts p, #contacts a, form label, .form-text, .btn-primary {
+        font-size: 3vw;
+    }
+   
+}
+
