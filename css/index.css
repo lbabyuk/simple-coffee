@@ -16,14 +16,15 @@ body{
     background-image: url("../img/luna.png");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover;
+    background-size:cover;
+    background-attachment: fixed;
     font-family: Arial, sans-serif; 
     margin: 0;
 }
  
  header{
-        padding: 20px;
-        background-color: lightgray;
+    padding: 20px;
+    background-color: lightgray;
     }
 
     header .heading {
@@ -67,7 +68,7 @@ body{
     font-size: 2vw;
     font-weight: var(--font-weight);
     color:black;
-    margin: 5%;
+    margin: 15%;
 }
 
 .time p{
@@ -135,7 +136,8 @@ body{
     margin-right: 5%;
     padding: 14px 40px;
     color: black;
-}
+    }
+
 #button-left:hover{
     color: black;
     background-color: white;
@@ -153,7 +155,7 @@ body{
 
 #bottom {
     margin-top: 15%;
-    margin-bottom: 10%;
+    margin-bottom: 15%;
     }
 
 #bottom p {
@@ -211,7 +213,7 @@ h5 {
  } 
 
  #footer {
-    background-color: lightgray;
+    background-color:darkgray;
     background-repeat: no-repeat;
     background-position: center-center;
     background-size: cover;
@@ -331,19 +333,11 @@ form label {
         font-size: 2vw;
     }
     
-    form label {
-        font-size: 2vw;
+    form label, .form-text, .btn-primary {
+        font-size: 1.5vw;
        }
-
-    .form-text {
-        font-size: 2vw;
-        
-      }
-    
-    .btn-primary {
-        font-size: 1.75vw;
-    }
 }
+
 @media (min-width: 768px) {
     
     #brand {
@@ -384,6 +378,7 @@ form label {
 
    }
 @media (max-width: 768px) {
+    
     body{
     width: 100%;
     }
