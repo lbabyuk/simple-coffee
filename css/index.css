@@ -20,12 +20,7 @@ body{
     font-family: Arial, sans-serif; 
     margin: 0;
 }
-
-/*body .parallax {
-    background-attachment: scroll;
-    background-color:red 
-}*/
-   
+ 
  header{
         padding: 20px;
         background-color: lightgray;
@@ -69,7 +64,7 @@ body{
     flex-direction: center;
     text-align: center;
     text-transform: uppercase;
-    font-size: 3vw;
+    font-size: 2vw;
     font-weight: var(--font-weight);
     color:black;
     margin: 5%;
@@ -87,9 +82,9 @@ body{
 }
 .time {
     background-color:rgba(248, 209, 150, 0.562);
-    border: 1px black solid;
+    border: 1px rgb(151, 138, 138) solid;
     width: 33%;
-    margin: 0;
+    margin: auto 1%;
     padding: 0;
 }
 
@@ -157,8 +152,8 @@ body{
 }
 
 #bottom {
-    margin-top: 25%;
-    margin-bottom: 25%;
+    margin-top: 15%;
+    margin-bottom: 10%;
     }
 
 #bottom p {

@@ -3,7 +3,7 @@ const hours = document.querySelector("#hours");
 const minutes = document.querySelector("#minutes");
  
 const currentYear = new Date().getFullYear();
-const newFinalTime = new Date(`May 31 ${currentYear} 00:00:00`);
+const newFinalTime = new Date(`june 01 ${currentYear} 00:00:00`);
 
 function updateClockContainerTime() {
     const currentTime = new Date();
