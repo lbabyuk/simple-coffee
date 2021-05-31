@@ -12,7 +12,7 @@
 
 
 body{
-    width: 100%;
+    width: 1000px;
     background-image: url("../img/luna.png");
     background-repeat: no-repeat;
     background-position: center;
@@ -20,11 +20,11 @@ body{
     background-attachment: fixed;
     font-family: Arial, sans-serif; 
     color: white;
-    margin: 0;
+    margin: auto;
 }
  
  header{
-    padding: 20px;
+    padding: 10px;
     background-color: lightgray;
     }
 
@@ -41,12 +41,12 @@ body{
     #brand {
         padding-left: 10%;
         font-weight: var(--font-weight);
-        font-size:2vw;
         font-family: cursive;
+        font-size: 2vw;
         text-transform: uppercase;
         text-align: left;
-        text-shadow: 5px 5px 2px gray;
-        color:wheat;
+        text-shadow: 5px 5px 2px darkgray;
+        color: white;
     }
     
     .icon img {
@@ -72,8 +72,9 @@ body{
     text-align: center;
     text-transform: uppercase;
     font-size: 2vw;
+    text-shadow: 3px 3px 1px darkgray;
     font-weight: var(--font-weight);
-    color:black;
+    color: white;
     margin: 15%;
 }
 
@@ -112,7 +113,7 @@ body{
 }
 
 #medium-text {
-    font-size: 2vw;
+    font-size: 2.3vw;
     font-weight: bold; 
     text-shadow: 3px 3px 1px gray;
     }
@@ -124,7 +125,7 @@ body{
     }
 
 #small-text {
-    font-size: 1.5vw;
+    font-size: 1.75vw;
     font-weight: var(--font-weight);
     text-shadow: 3px 3px 1px gray;
 }
@@ -138,11 +139,12 @@ body{
     text-decoration: none
 }
 #button-left {
-    border: black 2px solid;
+    border: white 2px solid;
     margin-right: 5%;
-    font-size: 2vw;
-    padding: 14px 40px;
+    font-size: 1.5vw;
+    padding: 10px 24px;
     color: black;
+    background-color: white;
     }
 
 #button-left:hover{
@@ -150,9 +152,9 @@ body{
     background-color: white;
 }
 #button-right {
-    padding: 14px 40px;
+    padding: 10px 24px;
     margin-left: 5%;
-    font-size: 2vw;
+    font-size: 1.5vw;
     background-color: blue;
     color: var(--color);
 }
@@ -181,11 +183,11 @@ body{
 #service-text {
     font-size: 3vw;
     font-weight: var(--font-weight);
-    text-shadow: text-shadow: 3px 3px 1px gray;
+    text-shadow: 3px 3px 1px gray;
 }
 
 #provide-text {
-    font-size: 1.5vw;
+    font-size:2vw;
     font-weight: var(--font-weight);
     text-shadow: 3px 3px 1px gray;
 }
@@ -207,7 +209,7 @@ h5 {
 }
 
 .row {
-    margin: 5% 5%;
+    margin: auto;
     padding-bottom: 200px;
 } 
 
@@ -230,16 +232,16 @@ h5 {
 }
 
 #contacts-text {
-    font-size: 2.5vw;
+    font-size: 2vw;
     font-weight: bold;
  }
 
 #p-text {
-    font-size: 1.75vw; 
+    font-size: 1.5vw; 
 } 
 
 #address-text,  #hours-text, #p-contacts {
-    font-size: 2vw;
+    font-size: 1.5vw;
     font-weight: bold;
 }
 
@@ -266,30 +268,31 @@ form label {
   @media (max-width: 991px) {
     
     #brand {
-        font-size:3.5vw;
+        font-size:2.5vw;
         text-shadow: 3px 3px 1px gray;
     }
 
     .clock-container {
-        font-size: 2vw;
+        font-size: 3vw;
         font-weight: var(--font-weight);
-        color:black;
+        text-shadow: 2px 2px 1px gray;
+        color: white;
         margin: 15%;
     }
 
     #medium-text {
         font-size: 3vw;
-        text-shadow: 3px 3px 2px rgb(221, 203, 197);
+        text-shadow: 3px 3px 2px gray;
         }
     
     #large-text {
         font-size: 4vw;
-        text-shadow: 3px 3px 2px rgb(221, 203, 197);
+        text-shadow: 3px 3px 2px gray;
         }
 
     #small-text {
         font-size: 2.75vw;
-        text-shadow: 2px 2px 1px rgb(221, 203, 197);
+        text-shadow: 2px 2px 1px gray;
     }
 
     #button-left {
@@ -305,12 +308,12 @@ form label {
 
     #service-text {
         font-size: 6vw;
-        text-shadow: 3px 3px 2px rgb(221, 203, 197);
+        text-shadow: 3px 3px 2px gray;
     }
     
     #provide-text {
         font-size: 3.5vw;
-         text-shadow: 3px 3px 2px rgb(221, 203, 197);
+         text-shadow: 3px 3px 2px gray;
     }
     
     h5 {
@@ -340,10 +343,10 @@ form label {
        }
 }
 
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     
     #brand {
-        font-size:3vw;
+        font-size:2vw;
         text-shadow: 2px 2px 1px gray;
     }
 
@@ -360,7 +363,7 @@ form label {
     }
     
     #small-text {
-        font-size: 2vw;
+        font-size: 2.5vw;
         text-shadow: 2px 2px 1px gray;
     }
 
@@ -378,7 +381,8 @@ form label {
         margin-left: 3%;
     }
 
-   }
+   }*/
+
 @media (max-width: 768px) {
     
     body{
@@ -468,7 +472,9 @@ form label {
         text-shadow: 2px 2px 1px gray;
     }
     .clock-container {
-        font-size: 4vw;
+        font-size: 3vw;
+        text-shadow: 2px 2px 1px gray;
+        color: white;
     }
 
     .time span {
@@ -539,6 +545,6 @@ form label {
     #address p, #hours p, #contacts p, #contacts a, form label, .form-text, .btn-primary {
         font-size: 3vw;
     }
-   
+  
 }
 
