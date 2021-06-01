@@ -77,17 +77,18 @@ body{
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: center;
             flex-direction: center;
     text-align: center;
     text-transform: uppercase;
-    font-size: 2vw;
-    text-shadow: 3px 3px 1px darkgray;
+    font-size: 1.25vw;
     font-weight: var(--font-weight);
     color: white;
-    margin: 15%;
+    margin: auto;
 }
 
 .time p{
@@ -97,13 +98,13 @@ body{
 
 .time span {
     padding-top: 0;
-    font-size: 1.5vw; 
+    font-size: 1.25vw; 
     margin-top: 0;
 }
 .time {
     background-color:grey;
     border: 1px rgb(151, 138, 138) solid;
-    width: 33%;
+    width: 200px;
     margin: auto 1%;
     padding: 0;
 }
@@ -196,7 +197,7 @@ body{
 }
 
 #bottom {
-    margin-top: 25%;
+    margin-top: 10%;
     margin-bottom: 15%;
     }
 
@@ -318,11 +319,24 @@ form label {
     }
 
     .clock-container {
-        font-size: 3vw;
+        font-size: 1.5vw;
         font-weight: var(--font-weight);
-        text-shadow: 2px 2px 1px gray;
         color: white;
-        margin: 15%;
+        margin: auto;
+    }
+
+    .time span {
+        padding-top: 0;
+        font-size: 1.5vw; 
+        margin-top: 0;
+    }
+
+    .time {
+        background-color:grey;
+        border: 1px rgb(151, 138, 138) solid;
+        width: 100px;
+        margin: auto 1%;
+        padding: 0;
     }
 
     #medium-text {
@@ -366,11 +380,11 @@ form label {
         color: black;
     }
     
-    .card-text {
-        font-size: 1.5vw;
+     .card-text {
+        font-size: 2vw;
         color: black;
     }
-
+    
     #contacts-text {
         font-size: 2.5vw;
      }
@@ -434,6 +448,13 @@ form label {
         text-shadow: 2px 2px 1px gray;
     }
 
+    time {
+        width: 80px;
+        margin: auto;
+        padding: 0;
+    }
+
+
     h5 {
         font-size: 3vw;
         color: black;
@@ -442,6 +463,12 @@ form label {
     .card-text {
         font-size: 2vw;
         color: black;
+    }
+
+    .mycard {
+        width: 90%;
+        padding: auto;
+        margin: auto;
     }
 
     #medium-text {
@@ -475,13 +502,13 @@ form label {
         margin-left: 3%;
     }
     #service-text {
-        font-size: 7vw;
+        font-size: 5vw;
         text-shadow: 4px 4px 0px gray;
         
     }
 
     #provide-text {
-        font-size: 4.5vw;
+        font-size: 3.5vw;
         text-shadow: 4px 4px 0px gray;
         
     }
@@ -514,6 +541,11 @@ form label {
     #brand {
         font-size:5vw;
         text-shadow: 2px 2px 1px gray;
+    }
+
+    #top {
+        height: 60vh;
+        margin-top: 175px;
     }
   
     .clock-container {
